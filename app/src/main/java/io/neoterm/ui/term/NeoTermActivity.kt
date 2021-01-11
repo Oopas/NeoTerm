@@ -340,13 +340,12 @@ class NeoTermActivity : AppCompatActivity(), ServiceConnection, SharedPreference
         }
 
         if (!isRecreating()) {
-            if (false) {
-                val intent = Intent(this, SetupActivity::class.java)
-                startActivityForResult(intent, REQUEST_SETUP)
-                return
+            if (SetupHelper.needSetup()) {
+                setSystemShellMode(true)
+                forceAddSystemSession()
             }
-            setSystemShellMode(true)
-            forceAddSystemSession()
+            enterMain()
+            update_colors()
         }
     }
 
