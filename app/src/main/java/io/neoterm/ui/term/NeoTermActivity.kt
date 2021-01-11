@@ -340,7 +340,7 @@ class NeoTermActivity : AppCompatActivity(), ServiceConnection, SharedPreference
         }
 
         if (!isRecreating()) {
-            if (0) {
+            if (false) {
                 val intent = Intent(this, SetupActivity::class.java)
                 startActivityForResult(intent, REQUEST_SETUP)
                 return
