@@ -14,7 +14,7 @@ class ShellParameter {
     var initialCommand: String? = null
     var env: Array<Pair<String, String>>? = null
     var sessionCallback: TerminalSession.SessionChangedCallback? = null
-    var systemShell: Boolean = false
+    var systemShell: Boolean = true
     var shellProfile: ShellProfile? = null
 
     fun executablePath(executablePath: String?): ShellParameter {
