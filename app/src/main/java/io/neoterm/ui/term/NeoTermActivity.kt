@@ -341,7 +341,6 @@ class NeoTermActivity : AppCompatActivity(), ServiceConnection, SharedPreference
 
         if (!isRecreating()) {
             if (SetupHelper.needSetup()) {
-                return
                 val intent = Intent(this, SetupActivity::class.java)
                 startActivityForResult(intent, REQUEST_SETUP)
                 return
