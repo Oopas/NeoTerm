@@ -1,6 +1,6 @@
 NeoTerm
 =======
-[![Travis build status](https://travis-ci.org/NeoTerm/NeoTerm.svg?branch=master)](https://travis-ci.org/NeoTerm/NeoTerm)
+[![Travis build status](https://api.travis-ci.org/Oopas/NeoTerm.svg?branch=master)]()
 ![](https://img.shields.io/badge/language-Kotlin-green.svg)
 ![](https://img.shields.io/badge/license-GPLv3-000000.svg)
 
