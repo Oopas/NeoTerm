@@ -26,5 +26,5 @@ deploy:
   provider: releases
   token: $GITHUB_TOKEN
   file:
-    - ../app/build/outputs/apk/release/app-release-signed.apk
+    - ../app/build/outputs/apk/release/app-release-unsigned.apk
   skip_cleanup: true
