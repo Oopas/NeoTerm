@@ -390,7 +390,7 @@ class NeoTermActivity : AppCompatActivity(), ServiceConnection, SharedPreference
     }
 
     private fun enterMain() {
-        setSystemShellMode(false)
+        setSystemShellMode(true)
 
         if (!termService!!.sessions.isEmpty()) {
             val lastSession = getStoredCurrentSessionOrLast()
