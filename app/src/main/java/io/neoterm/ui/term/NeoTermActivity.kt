@@ -343,9 +343,10 @@ class NeoTermActivity : AppCompatActivity(), ServiceConnection, SharedPreference
             if (SetupHelper.needSetup()) {
                 setSystemShellMode(true)
                 forceAddSystemSession()
+            }else{
+                enterMain()
+                update_colors()
             }
-            enterMain()
-            update_colors()
         }
     }
 
